@@ -1,6 +1,7 @@
 {
   "name": "project",
   "dependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -14,5 +15,8 @@
   "scripts": {
     "build": "webpack",
     "watch": "webpack -w"
+  },
+  "babel": {
+    "plugins": ["babel-plugin-transform-object-rest-spread"]
   }
 }
